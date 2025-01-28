@@ -1,0 +1,29 @@
+{
+  "name": "flutter devcontainer",
+  "image": "ghcr.io/thephaseless/devcontainers/flutter:latest",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "configureZshAsDefaultShell": "true",
+      "installOhMyZsh": "true",
+      "installOhMyZshConfig": "true"
+    },
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+  },
+  "extensions": [
+    "dart-code.flutter",
+    "dart-code.flutter-insiders",
+    "dart-code.dart-code",
+    "dart-code.dart-code-insiders"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "files.eol": "\n"
+      }
+    }
+  }
+}
